@@ -1,4 +1,4 @@
-from modelos.franja_horaria1 import IEntidadAcademica
+from modelos.entidad_base import IEntidadAcademica
 class Aula(IEntidadAcademica):
   def _init_
   self._codigo-codigo
