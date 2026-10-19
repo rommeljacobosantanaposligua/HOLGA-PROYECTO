@@ -1,4 +1,4 @@
-from modelos.entidad_base import IEntidadAcademica
+from modelos.Entidad_Base import IEntidadAcademica
 
 class Paralelo(IEntidadAcademica):
     def __init__(self, nombre):
@@ -9,6 +9,11 @@ class Paralelo(IEntidadAcademica):
     @property
     def nombre(self):
         return self.__nombre
+
+    @property
+    def materias(self):
+        return list(self.__materias_asignadas)
+
 
     # 📗 Cohesión: El paralelo es el responsable de agregar materias a su propia lista
     def agregar_materia(self, materia):

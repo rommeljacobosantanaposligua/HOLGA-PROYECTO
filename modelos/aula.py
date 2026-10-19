@@ -1,11 +1,20 @@
-from modelos.entidad_base import IEntidadAcademica
+from modelos.Entidad_Base import IEntidadAcademica
+
+# 📗 Herencia: Aula hereda de IEntidadAcademica
 class Aula(IEntidadAcademica):
-  def _init_
-  self._codigo-codigo
-  self._capacidad-capacidad
-  @property
-  def capacidad(self):
-    retur self._capacidad
-#polimorfismo: Misma funcion que en docente, pero comportamiento diferente
-  def mostrar_info(self):
-    return f"Aula:{self._codigo} | Capacidad:{self._capacidad}estudiantes"
+    def __init__(self, codigo, capacidad):
+        self._codigo = codigo
+        self._capacidad = capacidad
+
+    @property
+    def codigo(self):
+        return self._codigo
+
+    @property
+    def capacidad(self):
+        return self._capacidad
+
+    # 📙 Polimorfismo: Misma función que en otras entidades, pero comportamiento propio
+    def mostrar_info(self):
+        return f"Aula: {self._codigo} | Capacidad: {self._capacidad} estudiantes"
+

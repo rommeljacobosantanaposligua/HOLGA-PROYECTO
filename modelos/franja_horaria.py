@@ -1,4 +1,4 @@
-from modelos.entidad_base import IEntidadAcademica
+from modelos.Entidad_Base import IEntidadAcademica
 
 class FranjaHoraria(IEntidadAcademica):
     def __init__(self, dia, hora_inicio, hora_fin):
@@ -18,6 +18,13 @@ class FranjaHoraria(IEntidadAcademica):
     def hora_fin(self):
         return self._hora_fin
 
+    def se_solapa_con(self, otra):
+        """Verifica si dos franjas horarias coinciden en el mismo día y se cruzan en horas."""
+        if self._dia.strip().lower() != otra.dia.strip().lower():
+            return False
+        return not (self._hora_fin <= otra.hora_inicio or self._hora_inicio >= otra.hora_fin)
+
     # 📙 Polimorfismo
     def mostrar_info(self):
         return f"Horario: {self._dia} de {self._hora_inicio} a {self._hora_fin}"
+

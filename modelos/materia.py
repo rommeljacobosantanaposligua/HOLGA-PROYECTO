@@ -1,4 +1,4 @@
-from modelos.entidad_base import IEntidadAcademica
+from modelos.Entidad_Base import IEntidadAcademica
 
 # 📗 Crear clase / 📙 Herencia
 class Materia(IEntidadAcademica):
