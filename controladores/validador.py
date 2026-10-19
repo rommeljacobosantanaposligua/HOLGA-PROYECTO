@@ -4,4 +4,4 @@ class Validador:
 @staticmethod
 def verificar_capacidad
 #retorna true si el aula tiene capacidad suficiente
-return aula.capacidad >=cantidad_estudiantes
+return aula.capacidad >= cantidad_estudiantes
