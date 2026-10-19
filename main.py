@@ -3,7 +3,7 @@ from modelos.Aula import Aula
 from modelos.Materia import Materia
 from modelos.Paralelo import Paralelo
 from modelos.Franja_Horaria import FranjaHoraria
-from controladores.Gestor_horarios import GestorHorarios
+from controladores.Gestor_Horarios import GestorHorarios
 
 # 📗 Funciones: Función externa a las clases
 def imprimir_resumen(entidad):
