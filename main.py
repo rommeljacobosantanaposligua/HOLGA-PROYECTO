@@ -24,7 +24,7 @@ def main():
     imprimir_resumen(aula_lab)
     
     # Uso de método de clase
-    print(f"Total docentes registrados: {Docente.obtener_total_docentes()}\n")
+    print(f"El total de docentes registrados es: {Docente.obtener_total_docentes()}\n")
 
     # Iniciar el Gestor
     gestor = GestorHorarios()
